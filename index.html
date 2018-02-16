@@ -17,7 +17,7 @@
         <md-button class="menu" ng-click="menu.toggleList()">
             <md-icon md-svg-icon="menu"></md-icon>
         </md-button>
-        <h3>Where Is My Bus?</h3>
+        <h3>Bus Tracker</h3>
     </md-toolbar>
 
     <div class="container" layout="row" flex>
@@ -31,11 +31,11 @@
                         Mapa
                     </md-button>
                 </md-list-item>
-                <md-list-item>
+                <!--<md-list-item>
                     <md-button ng-click="menu.goTo('/informacion')">
                         Información
                     </md-button>
-                </md-list-item>
+                </md-list-item>-->
             </md-list>
         </md-sidenav>
 
@@ -44,16 +44,31 @@
         </div>
     </div>
     
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script>
     // Initialize Firebase
     var config = {
-        apiKey: "YOUR_KEY_HERE",
-        authDomain: "YOUR_DOMAIN",
-        databaseURL: "YOUR_URL",
-        storageBucket: "",
-    };
+        apiKey: "AIzaSyDk2TrUsIDxIv7V5CtAh00s9upOm6pP_8E",
+        authDomain: "the-good-kitchen-358f9.firebaseapp.com",
+        databaseURL: "https://the-good-kitchen-358f9.firebaseio.com",
+        projectId: "the-good-kitchen-358f9",
+        storageBucket: "the-good-kitchen-358f9.appspot.com",
+        messagingSenderId: "296313745716"
+      };
     firebase.initializeApp(config);
+    </script>-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: 'AIzaSyDk2TrUsIDxIv7V5CtAh00s9upOm6pP_8E',
+        authDomain: 'the-good-kitchen-358f9.firebaseapp.com',
+        databaseURL: 'https://the-good-kitchen-358f9.firebaseio.com',
+        projectId: 'the-good-kitchen-358f9',
+        storageBucket: 'the-good-kitchen-358f9.appspot.com',
+        messagingSenderId: '296313745716'
+      };
+      firebase.initializeApp(config);
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqdgnzU1vnaRNCnoIcGJyt8hLRTzPbADU"></script>
     <script src="lib/angular/angular.min.js"></script>
